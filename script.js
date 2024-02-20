@@ -82,30 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Get the popup element
     var popup = document.getElementById('popup');
 
-    // Get the buttons to enable/disable audio
-    var enableAudioBtn = document.getElementById('enableAudioBtn');
-    var disableAudioBtn = document.getElementById('disableAudioBtn');
-
     // Show the popup
     popup.style.display = 'block';
-
-    // Add event listeners to the buttons
-    enableAudioBtn.addEventListener('click', function() {
-        // Code to enable autoplay audio
-        // For example, play background audio
-        document.getElementById('backgroundAudio').play().catch(function(error) {
-            console.error('Failed to play audio:', error);
-        });
-        // Hide the popup
-        popup.style.display = 'none';
-    });
-
-    disableAudioBtn.addEventListener('click', function() {
-        // Hide the popup without playing audio
-        popup.style.display = 'none';
-    });
-
-    generateRain(); // Generate rain after the DOM content is loaded
 });
 
 // Generate rain on window resize (optional)
@@ -132,8 +110,7 @@ function updateFlashlightPosition(event) {
 document.addEventListener('mousemove', updateFlashlightPosition);
 
 // Add event listener to enable audio after user interaction
-var enableAudioBtn = document.getElementById('enableAudioBtn');
-enableAudioBtn.addEventListener('click', function() {
+document.getElementById('enableAudioBtn').addEventListener('click', function() {
     // Play the background audio
     var audio = document.getElementById('backgroundAudio');
     audio.play().catch(function(error) {

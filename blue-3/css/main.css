@@ -17,7 +17,7 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
   }
   
   .one-button::before {
@@ -32,12 +32,6 @@
     border-radius: inherit;
     z-index: -1;
     transition: background-color 0.3s ease; /* Smooth transition for the background color change */
-  }
-  
-  
-  .one-button:hover::before {
-    background-color: black; /* Change the background color to black on hover */
-    filter: blur(25px); /* Maintain the blur effect on hover */
   }
   
   .two-button a {
@@ -58,7 +52,7 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
   }
   
   .two-button::before {
@@ -73,10 +67,4 @@
     border-radius: inherit;
     z-index: -1;
     transition: background-color 0.3s ease; /* Smooth transition for the background color change */
-  }
-  
-  
-  .two-button:hover::before {
-    background-color: black; /* Change the background color to black on hover */
-    filter: blur(25px); /* Maintain the blur effect on hover */
   }

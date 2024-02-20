@@ -73,10 +73,6 @@ body {
   transition: background-color 0.3s ease; /* Smooth transition for the background color change */
 }
 
-.next-button:hover::before {
-  background-color: black; /* Change the background color to black on hover */
-  filter: blur(25px); /* Maintain the blur effect on hover */
-}
 
 .home-button a {
   display: flex; /* Use flexbox to center text vertically and horizontally */
