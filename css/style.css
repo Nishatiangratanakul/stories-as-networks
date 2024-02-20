@@ -1,0 +1,167 @@
+/* general */
+
+body {
+  background-color: black;
+}
+
+.h-center {
+  text-align: center;
+}
+
+.title-font {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 16pt;
+  color: white;
+}
+
+.body-font {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-size: 16pt;
+  color: white;
+}
+
+.body-font-small {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 100;
+  font-size: 12pt;
+  color: white;
+}
+
+
+.body-font-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 18pt;
+  color: white;
+}
+
+/* home button styles */
+.next-button a {
+  display: flex; /* Use flexbox to center text vertically and horizontally */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  text-decoration: none;
+  color: black;
+}
+
+.next-button{
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  padding: 15px 20px;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 20%;
+}
+
+.next-button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  filter: blur(25px);
+  border-radius: inherit;
+  z-index: -1;
+  transition: background-color 0.3s ease; /* Smooth transition for the background color change */
+}
+
+.next-button:hover::before {
+  background-color: black; /* Change the background color to black on hover */
+  filter: blur(25px); /* Maintain the blur effect on hover */
+}
+
+.home-button a {
+  display: flex; /* Use flexbox to center text vertically and horizontally */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  text-decoration: none;
+  color: white;
+}
+
+.home-button {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* hide audio styles */
+#audio-controls {
+  display: none;
+}
+
+/* Popup styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e9e9e9;
+  padding-top: 75px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content p {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.popup-content button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+:root {
+  cursor: none;
+  --cursorXPos: 50vw;
+  --cursorYPos: 50vh;
+}
+
+.overlay {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: radial-gradient(
+    circle 16rem at var(--cursorXPos) var(--cursorYPos), /* Increase the circle size */
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+  z-index: 4;
+  pointer-events: none; /* Allow pointer events to pass through */
+}
+

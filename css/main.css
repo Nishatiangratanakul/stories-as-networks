@@ -1,0 +1,14 @@
+.title-font {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 36pt;
+    color: white;
+  }
+  
+  .body-font {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-size: 16pt;
+    color: white;
+    margin-top: -30px;
+  }

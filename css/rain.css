@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    position: relative;
+}
+
+.rain-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.stem {
+    width: 1px;
+    height: 60%;
+    margin-left: 7px;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.25));
+    animation: stem 0.5s linear infinite;
+}
+
+.splat {
+    width: 15px;
+    height: 10px;
+    border-top: 2px dotted white;
+    border-radius: 25%;
+    opacity: 1;
+    transform: scale(0);
+    animation: splat 0.5s linear infinite;
+    display: none;
+}
+
+.drop {
+    position: absolute;
+    bottom: 100%;
+    width: 1px;
+    height: 10px;
+    pointer-events: none;
+    animation: drop 20s linear infinite; /* Increase animation duration to 20s */
+    background-color: white;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-20vh); /* Start raindrop animation from 20% above the viewport */
+    }
+    100% {
+        transform: translateY(210vh); /* Move raindrop to 120% below the viewport */
+    }
+}
+
+
+@keyframes stem {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 60%;
+    }
+}
+
+@keyframes splat {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

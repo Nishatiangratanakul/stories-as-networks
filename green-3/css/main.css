@@ -1,0 +1,78 @@
+
+.one-button a {
+    text-align: center;
+    display: flex; /* Use flexbox to center text vertically and horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-decoration: none;
+    color: black;
+    padding: 5px 5px;
+  }
+  
+  .one-button{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .one-button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    filter: blur(25px);
+    border-radius: inherit;
+    z-index: -1;
+    transition: background-color 0.3s ease; /* Smooth transition for the background color change */
+  }
+  
+  
+  .one-button:hover::before {
+    background-color: black; /* Change the background color to black on hover */
+    filter: blur(25px); /* Maintain the blur effect on hover */
+  }
+  
+  .two-button a {
+    text-align: center;
+    display: flex; /* Use flexbox to center text vertically and horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-decoration: none;
+    color: black;
+    padding: 5px 5px;
+  }
+  
+  .two-button{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .two-button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    filter: blur(25px);
+    border-radius: inherit;
+    z-index: -1;
+    transition: background-color 0.3s ease; /* Smooth transition for the background color change */
+  }
+  
+  
+  .two-button:hover::before {
+    background-color: black; /* Change the background color to black on hover */
+    filter: blur(25px); /* Maintain the blur effect on hover */
+  }

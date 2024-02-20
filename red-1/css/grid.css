@@ -1,0 +1,38 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr); /* Creating 12 equal-width columns */
+    grid-template-rows: repeat(10, 0.5fr); /* Creating 12 equal-width columns */
+    gap: 10px; /* Adjust the gap between grid items as needed */
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-item {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.first {
+    grid-column: 1 / span 6; /* This element starts at the 2nd column and spans 3 columns */
+    grid-row: 2; /* This element is placed on the 2nd row */
+}
+
+.second {
+    grid-column: 6 / span 6; /* This element starts at the 4th column and spans 8 columns */
+    grid-row: 4; /* This element is placed on the 3rd row */
+}
+
+.third {
+    grid-column: 3 / span 6; /* This element starts at the 4th column and spans 8 columns */
+    grid-row: 7; /* This element is placed on the 3rd row */
+}
+
+.next-button {
+    grid-column: 7 / span 1; /* This element starts at column 5 and spans 2 columns */
+    grid-row: 9; /* This element is placed on the 5th row */
+}
+
+.home-button {
+    grid-column: 1 / span 1; /* This element starts at column 5 and spans 2 columns */
+    grid-row: 10; /* This element is placed on the 5th row */
+}
