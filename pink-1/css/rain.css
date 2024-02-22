@@ -42,7 +42,7 @@ body {
     width: 1px;
     height: 10px;
     pointer-events: none;
-    animation: drop 20s linear infinite; /* Increase animation duration to 20s */
+    animation: drop 60s linear infinite;
     background-color: white;
 }
 
@@ -51,7 +51,7 @@ body {
         transform: translateY(-20vh); /* Start raindrop animation from 20% above the viewport */
     }
     100% {
-        transform: translateY(100vh);
+        transform: translateY(205vh);
     }
 }
 

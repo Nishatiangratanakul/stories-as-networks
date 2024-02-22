@@ -2,6 +2,9 @@
 
 body {
   background-color: black;
+    cursor: url('../assets/images/cross-hair.png'), url('cross-hair.png'),
+            url('cross-hair.png'), auto;
+
 }
 
 .h-center {
@@ -153,11 +156,11 @@ body {
   height: 100%;
   position: fixed;
   background: radial-gradient(
-    circle 16rem at var(--cursorXPos) var(--cursorYPos), /* Increase the circle size */
+    circle 16rem at var(--cursorXPos) var(--cursorYPos), 
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.95) 100%
   );
   z-index: 4;
-  pointer-events: none; /* Allow pointer events to pass through */
+  pointer-events: none;
 }
 
