@@ -51,7 +51,7 @@ body {
         transform: translateY(-20vh); /* Start raindrop animation from 20% above the viewport */
     }
     100% {
-        transform: translateY(205vh);
+        transform: translateY(130vh);
     }
 }
 

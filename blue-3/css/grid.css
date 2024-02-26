@@ -12,6 +12,12 @@
     border-radius: 5px;
 }
 
+.one {
+    grid-column: 7 / span 2; 
+    grid-row: 4; 
+    margin-left: -40px
+}
+
 .one-button {
     grid-column: 6 / span 1; /* This element starts at column 5 and spans 2 columns */
     grid-row: 6; /* This element is placed on the 5th row */

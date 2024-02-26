@@ -34,6 +34,11 @@
     transition: background-color 0.3s ease; /* Smooth transition for the background color change */
   }
   
+  .one-button:hover::before {
+    background-color: rgb(255, 3, 3); /* Change the background color to black on hover */
+    filter: blur(25px); /* Maintain the blur effect on hover */
+  }
+
   .two-button a {
     text-align: center;
     display: flex; /* Use flexbox to center text vertically and horizontally */

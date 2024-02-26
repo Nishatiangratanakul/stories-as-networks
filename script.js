@@ -122,3 +122,11 @@ document.getElementById('enableAudioBtn').addEventListener('click', function() {
     // Generate rain animation
     generateRain();
 });
+
+window.addEventListener('focus', function() {
+    console.log('Window focused');
+});
+
+window.addEventListener('blur', function() {
+    console.log('Window blurred');
+});

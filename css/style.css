@@ -1,10 +1,5 @@
-/* general */
-
 body {
   background-color: black;
-    cursor: url('../assets/images/cross-hair.png'), url('cross-hair.png'),
-            url('cross-hair.png'), auto;
-
 }
 
 .h-center {
@@ -41,7 +36,6 @@ body {
   color: white;
 }
 
-/* home button styles */
 .next-button a {
   display: flex; /* Use flexbox to center text vertically and horizontally */
   align-items: center; /* Center vertically */
@@ -95,12 +89,10 @@ body {
   cursor: pointer;
 }
 
-/* hide audio styles */
 #audio-controls {
   display: none;
 }
 
-/* Popup styles */
 .popup {
   display: none;
   position: fixed;
@@ -164,3 +156,26 @@ body {
   pointer-events: none;
 }
 
+
+@media only screen and (max-width: 480px) {
+  .title-font {
+    font-size: 10pt;
+  }
+  
+  .body-font {
+    font-size: 10pt;
+  }
+  
+
+  .next-button{
+    padding: 15px 20px;
+    border-radius: 50px;
+    margin-bottom: 20%;
+  }
+  
+  .next-button::before {
+    background-color: white;
+    filter: blur(25px);
+  }
+  
+}

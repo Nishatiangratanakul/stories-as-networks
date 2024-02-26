@@ -14,7 +14,7 @@
 
 .first {
     grid-column: 1 / span 8; /* This element starts at the 2nd column and spans 3 columns */
-    grid-row: 2; /* This element is placed on the 2nd row */
+    grid-row: 3; /* This element is placed on the 2nd row */
 }
 
 .second {

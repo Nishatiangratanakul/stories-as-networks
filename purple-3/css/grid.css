@@ -14,20 +14,16 @@
 
 .first{
     grid-column: 7 / span 2; /* This element starts at column 5 and spans 2 columns */
-    grid-row: 2; /* This element is placed on the 5th row */
+    grid-row: 4; /* This element is placed on the 5th row */
+    padding-left: 10px;
 }
 
 .one-button {
     grid-column: 6 / span 2; /* This element starts at column 5 and spans 2 columns */
-    grid-row: 4; /* This element is placed on the 5th row */
+    grid-row: 6; /* This element is placed on the 5th row */
 }
 
 .two-button {
-    grid-column: 9 / span 2; /* This element starts at column 5 and spans 2 columns */
-    grid-row: 4; /* This element is placed on the 5th row */
-}
-
-.home-button {
-    grid-column: 1 / span 1; /* This element starts at column 5 and spans 2 columns */
-    grid-row: 9; /* This element is placed on the 5th row */
+    grid-column: 8 / span 2; /* This element starts at column 5 and spans 2 columns */
+    grid-row: 6; /* This element is placed on the 5th row */
 }
