@@ -28,7 +28,37 @@
     grid-row: 6; /* This element is placed on the 5th row */
 }
 
-.home-button {
-    grid-column: 1 / span 1; /* This element starts at column 5 and spans 2 columns */
-    grid-row: 10; /* This element is placed on the 5th row */
-}
+
+@media only screen and (max-width: 480px) {
+  
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr); /* Creating 12 equal-width columns */
+        grid-template-rows: repeat(10, 0.5fr); /* Creating 12 equal-width columns */
+        gap: 10px; /* Adjust the gap between grid items as needed */
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .grid-item {
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    .one {
+        grid-column: 4 / span 5; 
+        grid-row: 3; 
+        margin-left: -80px
+    }
+    
+    .one-button {
+        grid-column: 3 / span 1; /* This element starts at column 5 and spans 2 columns */
+        grid-row: 5; /* This element is placed on the 5th row */
+    }
+    
+    .two-button {
+        grid-column: 5 / span 1; /* This element starts at column 5 and spans 2 columns */
+        grid-row: 5; /* This element is placed on the 5th row */
+    }
+    
+  }

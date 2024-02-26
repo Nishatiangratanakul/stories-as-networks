@@ -40,3 +40,50 @@
     grid-column: 7 / span 1; 
     grid-row: 17; 
 }
+
+@media only screen and (max-width: 480px) {
+  
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(13, 1fr); /* Creating 12 equal-width columns */
+        grid-template-rows: repeat(11, 0.5fr); /* Creating 12 equal-width columns */
+        gap: 10px; /* Adjust the gap between grid items as needed */
+        justify-content: center;
+        align-content: center;
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+    
+    
+    .grid-item {
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    .first {
+        grid-column: 1 / span 10; 
+        grid-row: 2;
+    }
+    
+    .second {
+        grid-column: 6 / span 11; 
+        grid-row: 4;
+    }
+    
+    .third {
+        grid-column: 1 / span 10; 
+        grid-row: 6;
+    }
+    
+    
+    .forth {
+        grid-column: 4 / span 8; 
+        grid-row: 8; 
+    }
+    
+    
+    .next-button {
+        grid-column: 7 / span 1; 
+        grid-row: 10;
+    }
+    
+  }

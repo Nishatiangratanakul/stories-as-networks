@@ -26,3 +26,33 @@
     grid-column: 8 / span 2; /* This element starts at column 5 and spans 2 columns */
     grid-row: 7; /* This element is placed on the 5th row */
 }
+
+@media only screen and (max-width: 480px) {
+  
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr); /* Creating 12 equal-width columns */
+        grid-template-rows: repeat(8, 0.5fr); /* Creating 12 equal-width columns */
+        gap: 10px; /* Adjust the gap between grid items as needed */
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .first{
+        grid-column: 3 / span 8; /* This element starts at column 5 and spans 2 columns */
+        grid-row: 5; /* This element is placed on the 5th row */
+        margin-left: -10px
+
+    }
+    
+    .one-button {
+        grid-column: 2 / span 4; /* This element starts at column 5 and spans 2 columns */
+        grid-row: 7; /* This element is placed on the 5th row */
+    }
+    
+    .two-button {
+        grid-column: 5 / span 3; /* This element starts at column 5 and spans 2 columns */
+        grid-row: 7; /* This element is placed on the 5th row */
+    }
+    
+  }

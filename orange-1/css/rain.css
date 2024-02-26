@@ -51,7 +51,7 @@ body {
         transform: translateY(-20vh); /* Start raindrop animation from 20% above the viewport */
     }
     100% {
-        transform: translateY(120vh);
+        transform: translateY(100vh);
     }
 }
 
@@ -77,13 +77,14 @@ body {
     }
 }
 
+
 @media only screen and (max-width: 480px) {
     @keyframes drop {
         0% {
             transform: translateY(-20vh); /* Start raindrop animation from 20% above the viewport */
         }
         100% {
-            transform: translateY(135vh);
+            transform: translateY(105vh);
         }
     }
 }
