@@ -1,8 +1,12 @@
 
 body {
   background-color: black;
-  cursor: url('../assets/images/cross-hair.png'), url('cross-hair.png'),
-        url('cross-hair.png'), auto;
+}
+
+body {
+background-color: black;
+cursor: url('../assets/images/cross-hair.png'), url('cross-hair.png'),
+      url('cross-hair.png'), auto;
 
 }
 
