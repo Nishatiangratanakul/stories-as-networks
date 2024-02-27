@@ -76,3 +76,14 @@ body {
         transform: scale(1);
     }
 }
+
+@media only screen and (max-width: 480px) {
+    @keyframes drop {
+        0% {
+            transform: translateY(-20vh); /* Start raindrop animation from 20% above the viewport */
+        }
+        100% {
+            transform: translateY(100vh);
+        }
+    }
+}
